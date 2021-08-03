@@ -12,7 +12,7 @@ function Componente({titulo, conteudo}) {
   const linkName=readMore?'Ler menos << ':`${titulo} >> `
   return (
     <div className="App">
-      <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></a>
+      <p className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></p>
       {readMore && extraContent}
     </div>
   );
