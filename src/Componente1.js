@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function Componente({curiosidade}) {
+function Componente({titulo, conteudo}) {
   const [readMore,setReadMore]=useState(false);
   const extraContent=<div>
       <p className="extra-content">
@@ -9,7 +9,7 @@ function Componente({curiosidade}) {
         commodi officia aliquam! Maxime.
       </p>
   </div>
-  const linkName=readMore?'Ler menos << ':`Curiosidade ${curiosidade} >> `
+  const linkName=readMore?'Ler menos << ':`${titulo} >> `
   return (
     <div className="App">
       <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></a>
