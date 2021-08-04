@@ -4,9 +4,15 @@ function Componente({titulo, conteudo}) {
   const [readMore,setReadMore]=useState(false);
   const extraContent=<div>
       <p className="extra-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab 
-        porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero 
-        commodi officia aliquam! Maxime.
+        Falei bastante de instruções, dados e máquinas de lavar roupas, mas como os Hazards são corrigidos na prática?
+        No pipeline, existem conjuntos que transmitem os dados para 
+        os que estão à sua frente. Para ser mais específica, registradores são agrupados e capazes de comunicar entre si
+        para que os dados consigam fluir através do pipeline. Porém, alguns desses conjuntos demoram para processar 
+        os dados que serão necessários para outra instrução mais a frente, por isso os Hazards acontecem. Entretanto,
+        a arquitetura que descrevi acima não consegue detectar essas falhas do pipeline, pois não possuem um mecanismo
+        denominado de "forwarding", o qual é capaz de adiantar determinados dados para que instruções "nop" e troca de lugar de 
+        outras instruções não seja mais necessário, evitando que o programador se preocupe com os Hazards.
+
       </p>
   </div>
   const linkName=readMore?'Ler menos << ':`${titulo} >> `

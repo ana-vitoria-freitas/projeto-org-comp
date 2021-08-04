@@ -13,7 +13,7 @@ function App() {
       <Componente1 titulo="O que é pipeline?" />
       <Componente2 titulo="O que são Hazards?" />
       <Componente3 titulo="Como evitá-los?"/>
-      <Componente4 titulo="Exemplos"/>
+      <Componente4 titulo="Para entender melhor"/>
       <Footer/>
     </div>
   );
