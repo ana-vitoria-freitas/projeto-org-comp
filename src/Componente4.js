@@ -11,7 +11,8 @@ function Componente({titulo, conteudo}) {
         os dados que serão necessários para outra instrução mais a frente, por isso os Hazards acontecem. Entretanto,
         a arquitetura que descrevi acima não consegue detectar essas falhas do pipeline, pois não possuem um mecanismo
         denominado de "forwarding", o qual é capaz de adiantar determinados dados para que instruções "nop" e troca de lugar de 
-        outras instruções não seja mais necessário, evitando que o programador se preocupe com os Hazards.
+        outras instruções não seja mais necessário, evitando que o programador se preocupe com os Hazards. Dessa forma, o pipeline
+        exemplificado não é o mais eficiente e por isso deixo aqui outras alternativas de pesquisa e aprofundamento no assunto: <a href="https://www.professores.uff.br/lbertini/wp-content/uploads/sites/108/2017/08/Cap-5-Pipeline.pdf">Piepeline e Hazards</a>
 
       </p>
   </div>
